@@ -1,6 +1,13 @@
 import Foundation
 
+final class ChessGame {
+    
+}
+
 final class ChessBoard {
+    
+    static let rankLength = 8
+    static let fileLength = 8
     
     var chessBoard: [[ChessPiece]] = []
     
