@@ -16,6 +16,8 @@
 		C2DB7A6A28604DEA00AE4F7C /* ChessGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB7A6928604DEA00AE4F7C /* ChessGameTests.swift */; };
 		C2DB7A7428604DEB00AE4F7C /* ChessGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB7A7328604DEB00AE4F7C /* ChessGameUITests.swift */; };
 		C2DB7A7628604DEB00AE4F7C /* ChessGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB7A7528604DEB00AE4F7C /* ChessGameUITestsLaunchTests.swift */; };
+		C2DB7A8428604E1D00AE4F7C /* ChessBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB7A8328604E1D00AE4F7C /* ChessBoard.swift */; };
+		C2DB7A8628604E3200AE4F7C /* ChessPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB7A8528604E3200AE4F7C /* ChessPiece.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C2DB7A6F28604DEB00AE4F7C /* ChessGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DB7A7328604DEB00AE4F7C /* ChessGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessGameUITests.swift; sourceTree = "<group>"; };
 		C2DB7A7528604DEB00AE4F7C /* ChessGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C2DB7A8328604E1D00AE4F7C /* ChessBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessBoard.swift; sourceTree = "<group>"; };
+		C2DB7A8528604E3200AE4F7C /* ChessPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessPiece.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		C2DB7A5128604DEA00AE4F7C /* ChessGame */ = {
 			isa = PBXGroup;
 			children = (
+				C2DB7A8228604E1400AE4F7C /* Model */,
 				C2DB7A5228604DEA00AE4F7C /* AppDelegate.swift */,
 				C2DB7A5428604DEA00AE4F7C /* SceneDelegate.swift */,
 				C2DB7A5628604DEA00AE4F7C /* ViewController.swift */,
@@ -125,6 +130,15 @@
 				C2DB7A7528604DEB00AE4F7C /* ChessGameUITestsLaunchTests.swift */,
 			);
 			path = ChessGameUITests;
+			sourceTree = "<group>";
+		};
+		C2DB7A8228604E1400AE4F7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2DB7A8328604E1D00AE4F7C /* ChessBoard.swift */,
+				C2DB7A8528604E3200AE4F7C /* ChessPiece.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +274,8 @@
 			files = (
 				C2DB7A5728604DEA00AE4F7C /* ViewController.swift in Sources */,
 				C2DB7A5328604DEA00AE4F7C /* AppDelegate.swift in Sources */,
+				C2DB7A8428604E1D00AE4F7C /* ChessBoard.swift in Sources */,
+				C2DB7A8628604E3200AE4F7C /* ChessPiece.swift in Sources */,
 				C2DB7A5528604DEA00AE4F7C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
