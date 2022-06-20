@@ -50,6 +50,4 @@ final class ChessBoard {
         //TODO: 체스말은 위치 값은 가로 file은 A부터 H까지, 세로 rank는 1부터 8까지 입력이 가능하다.
         return true
     }
-    
-    private func canMoveTo(location: ,)
 }
