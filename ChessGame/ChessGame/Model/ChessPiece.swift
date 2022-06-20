@@ -8,6 +8,7 @@ struct ChessPiece {
     
     var chessPieceString: String {
         switch self.chessPieceType {
+        case .empty: return "."
         case .pawn: return self.color == .black ? "♟" : "♙"
         case .bishop: return self.color == .black ? "♝" : "♗"
         case .knight: return self.color == .black ? "♞" : "♘"
@@ -20,6 +21,7 @@ struct ChessPiece {
         var candidates: [ChessPieceLocation] = []
         let currentLocation = self.location
         switch self.chessPieceType {
+        case .empty: break
         case .pawn:
             if self.color == .black && currentLocation.rank + 1 < ChessBoard.rankLength {
                 candidates.append(
@@ -98,6 +100,7 @@ struct ChessPiece {
 }
 
 enum ChessPieceType {
+    case empty
     case pawn
     case bishop
     case knight
@@ -106,6 +109,7 @@ enum ChessPieceType {
     
     var score: Int {
         switch self {
+        case .empty: return 0
         case .pawn: return 1
         case .bishop, .knight: return 3
         case .luke: return 5
